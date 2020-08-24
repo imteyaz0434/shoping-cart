@@ -75,14 +75,21 @@ th{
 }
 
 .adj{
-    margin-bottom: 10px;
+ margin-bottom: 10px;
 }
+
 .cart-to{
     float:right !important;
     margin-left: 20px;
 }
+
 .ratingmode{padding-left:0px;display:inline-block;font-size: 18px !important;}
+
 .ratingmode:hover{opacity:1; cursor: pointer;}
+
 .icon-size{font-size: 13px !important;}
+
 .icon-container{width: 100% !important;}
+
+/* https://deloitte.hirevue.com/interviews/P5skfwk-6qkfmf/ */
 	
