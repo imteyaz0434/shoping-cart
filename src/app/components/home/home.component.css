@@ -1,0 +1,75 @@
+.list-item{
+    display: inline;
+}
+.card{
+    background-color:#eeeeee;
+   
+}
+.notFound{
+    background-color: #ffffff;
+    color: Red;
+}
+.alert-text{
+    margin:0; 
+    line-height:50px;
+    text-align:center
+}
+table{
+    border-collapse:separate !important;
+}
+th{
+    padding: 14px 1px !important;
+}
+.border{
+    border: #e6ddddef 1px solid;
+    padding: 0 5px !important;
+}
+.round{
+    border-radius:20px ;
+    text-align: center;
+    background-color:orange !important; 
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,0%);
+}
+.card-content{
+    padding: 6px !important;
+}
+.card-title{
+    font-size: 15px !important;
+    margin-bottom: 0 !important;
+    line-height: 5px !important;
+    font-weight: 500 !important;
+}
+.offamount{
+    font-size: 14px !important;
+    color: #000;
+}
+.realamount{
+    font-size: 13px  !important;
+    color: #81807b;   
+}
+.padding{
+    padding: 10px 0px !important;
+}
+.discount{
+    font-size: 13px  !important;
+    font-weight: 600 !important;
+    color: rgb(55, 212, 23);
+}
+.body{
+    background-color:#eeeeee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dark{
+    padding: 5px 0px !important;
+    margin: 2px 0px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:#eeeeee;
+}
+
+.adj{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,32 @@
+<nav>
+    <div class="row">
+       <div class="col s12 ">
+        <ul class="">
+            <div class="col s3 col m3 col l3 ">
+            <li >
+                <img src='../../../assets/images.png' width="50px" height="50px" class="logo">
+            </li>
+        </div> 
+        <div class="col s6 col m6 col l6 ">
+            <li class=full-input >
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons search">search</i>
+                      <input placeholder="Search here" id="search" type="text" class="" (keyup)="search($event.target.value)">
+                    </div>
+                    
+                </form>
+            </li>
+        </div> 
+        <div class="col s3 col m2 col l2 offset">
+            <li class="size">
+                <i class="material-icons right join-cart ">add_shopping_cart</i>
+                <span class="active-cart" *ngIf='cartCount' >{{cartCount}}</span>
+                </li>
+            </div>
+            </ul>
+        </div>
+       </div>
+</nav>
+
+
