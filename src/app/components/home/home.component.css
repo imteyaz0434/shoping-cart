@@ -5,6 +5,10 @@
     background-color:#fffdfd;
    
 }
+.nopadding{
+    padding: 0px !important;
+}
+
 .notFound{
     background-color: #ffffff;
     color: Red;
@@ -73,3 +77,12 @@ th{
 .adj{
     margin-bottom: 10px;
 }
+.cart-to{
+    float:right !important;
+    margin-left: 20px;
+}
+.ratingmode{padding-left:0px;display:inline-block;font-size: 18px !important;}
+.ratingmode:hover{opacity:1; cursor: pointer;}
+.icon-size{font-size: 13px !important;}
+.icon-container{width: 100% !important;}
+	
