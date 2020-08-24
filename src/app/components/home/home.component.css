@@ -2,7 +2,7 @@
     display: inline;
 }
 .card{
-    background-color:#eeeeee;
+    background-color:#fffdfd;
    
 }
 .notFound{
@@ -21,8 +21,8 @@ th{
     padding: 14px 1px !important;
 }
 .border{
-    border: #e6ddddef 1px solid;
-    padding: 0 5px !important;
+    /* border: #e6ddddef 1px solid; */
+    padding: 1px 15px !important;
 }
 .round{
     border-radius:20px ;

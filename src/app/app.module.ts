@@ -8,13 +8,15 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {CartService} from './services/cart.service';
 import { PriceCalulaterPipe } from './price-calulater.pipe';
+import { SidemenuComponent } from './components/sidemenu/sidemenu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    PriceCalulaterPipe
+    PriceCalulaterPipe,
+    SidemenuComponent
   ],
   imports: [
     BrowserModule,

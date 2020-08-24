@@ -1,11 +1,11 @@
-<div class="">
+<div class="row">
+  <div class="col s3 col m3">
+      <app-sidemenu></app-sidemenu>
+  </div>
+  <div class="col s9 col m9">
     <app-navbar></app-navbar>
-</div>
 <div class="body"> 
-    <div class="row">
-        <div class="col s6  dark border"><i class="material-icons">swap_vert</i><span class="adj">Sort</span></div>
-        <div class="col s6  dark border"><i class="material-icons">local_bar</i><span class="adj">Filter</span></div>
-        <div class="col s6 col m4 col l3 border" *ngFor='let item of filterData'>
+        <div class="col s6 col m4 col l4 border" *ngFor='let item of filterData'>
             <div class="card">
                 <div class="card-image waves-block">
                   <img class="activator" src='{{item.img_url}}'>
@@ -15,13 +15,18 @@
                   <table>
                     <thead>
                       <tr class="padding">
-                          <th class="offamount">&#8377;{{item.price - item.discount}}</th>
-                          <th class="realamount"><del>{{item.price}}</del></th>
-                          <th class="discount">{{item.price | priceCalulater:item.discount}}% off</th>
+                          <th class="">{{item.name}}</th>
+                        
+                          <th class="discount">&#8377;{{item.price}}</th>
                       </tr>
                     </thead>
+                    <div>
+                      <i class="material-icons right join-cart ">add_shopping_cart</i>
+                      <i class="material-icons right join-cart" (click)='addToCart(item)'>add_shopping_cart</i>
+                    </div> 
+                    
                   </table>
-                    <div class="btn round" (click)='addToCart(item)'>Add To Cart</div> 
+                   
                 </div>
               </div>
         </div>
@@ -31,7 +36,8 @@
         <div class="notFound" *ngIf='httpError'>
           <h6 class="alert-text">Server Error: Failed to Load Items. Please Try again Later!!!!</h6>
         </div>
-    </div>
+</div>
+</div>
 </div>
 
 
