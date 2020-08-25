@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/services/cart.service';
 import { Items } from '../../models/model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,7 @@ export class HomeComponent implements OnInit {
   httpError:boolean =false;
   sidemenu:boolean=false;
 
-  constructor(private cartService: CartService) {}
+  constructor(private cartService: CartService, private router:Router) {}
 
   ngOnInit() {
     this.cartService.fetch().subscribe(
@@ -34,6 +35,10 @@ export class HomeComponent implements OnInit {
   appendData() {
     this.filterData = this.ProductItems;
     this.checkSearch();
+  }
+  showProduct(id){
+    //console.log(id);
+    this.router.navigate(['/cart',id]);
   }
 
   addToCart(item) {

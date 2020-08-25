@@ -9,7 +9,7 @@
             <app-sidemenu></app-sidemenu>
           </div>  -->
           <div class="col s6 col m4 col l4 border" *ngFor='let item of filterData'>
-              <div class="card">
+              <div class="card" style="cursor: pointer;">
                   <div class="card-image waves-block">
                     <img class="activator" src='{{item.img_url}}'>
                   </div>
@@ -20,7 +20,7 @@
                         <tr class="padding">
                             <th class="type-font">{{item.name}}</th>
                           
-                            <th class="discount">&#8377;{{item.price}}</th>
+                            <th class="discount">&#36;{{item.price}}</th>
                         </tr>
                       </thead>
                      

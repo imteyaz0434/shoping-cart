@@ -14,10 +14,10 @@ nav{
 .size{
     font-size: 30px !important;
     position: relative;
-    margin-right: -50px;
 }
 .join-cart{
     line-height: 66px !important;
+    margin-left: 25px !important;
     font-size: 32px !important;
 }
 
@@ -47,12 +47,10 @@ nav{
 }
 input{
     border-bottom:orangered 1px solid !important;
-    color:#000;
+    color:#fff;
     font-weight: 400;
     font-size: 10px;
 }
 .menu{
-    color: #000 !important;
-    padding: 26px 16px !important;
-    font-size: 12px !important;
+    padding: 25px 15px ;
 }

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as M from 'materialize-css';
+import { CartService } from 'src/app/services/cart.service';
+import { Items } from '../../models/model';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -8,15 +11,16 @@ import * as M from 'materialize-css';
   styleUrls: ['./sidemenu.component.css']
 })
 export class SidemenuComponent implements OnInit {
-
-  constructor() { }
-
+selectedItem;
+  constructor(private cartService: CartService,private activelink:ActivatedRoute) { }
+  item=[];
   ngOnInit(){
-    const elems = document.querySelector('.sidenav');
-    M.Sidenav.init(elems, {});
+  const id = this.activelink.snapshot.paramMap.get('id');
+    this.fetch(id);
+}
+  fetch(id){
+  this.selectedItem = this.cartService.fetchById(id);
   }
-  
-
-
 
 }
+  
