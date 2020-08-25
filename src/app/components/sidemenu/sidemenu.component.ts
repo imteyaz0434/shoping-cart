@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as M from 'materialize-css';
 
 
 @Component({
@@ -10,7 +11,9 @@ export class SidemenuComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    const elems = document.querySelector('.sidenav');
+    M.Sidenav.init(elems, {});
   }
   
 

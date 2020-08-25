@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   filterData: any;
   noData: boolean = false;
   httpError:boolean =false;
+  sidemenu:boolean=false;
 
   constructor(private cartService: CartService) {}
 

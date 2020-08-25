@@ -1,47 +1,50 @@
-i<div class="row">
-  <div class="col s3 col m3 nopadding">
-      <app-sidemenu></app-sidemenu>
+<div class="row">
+  <div class="col s12 col m12 nopadding">
+      <app-navbar></app-navbar>
+  </div> 
+</div>
+    <div class="body">
+        <div class="row">
+          <!-- <div class="col s3 col m3 col l4 hight">
+            <app-sidemenu></app-sidemenu>
+          </div>  -->
+          <div class="col s6 col m4 col l4 border" *ngFor='let item of filterData'>
+              <div class="card">
+                  <div class="card-image waves-block">
+                    <img class="activator" src='{{item.img_url}}'>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">{{item.name}}</span>
+                    <table>
+                      <thead>
+                        <tr class="padding">
+                            <th class="type-font">{{item.name}}</th>
+                          
+                            <th class="discount">&#8377;{{item.price}}</th>
+                        </tr>
+                      </thead>
+                     
+                          <div class="icon-container">
+                              <span id="p1"  class="ratingmode"><i class="material-icons icon-size">star</i></span>
+                              <span id="p2"  class="ratingmode"><i class="material-icons icon-size">star</i></span>
+                              <span id="p3"  class="ratingmode"><i class="material-icons icon-size">star</i></span>
+                              <span id="p4"  class="ratingmode"><i class="material-icons icon-size">star</i></span>
+                              <span id="p5"  class="ratingmode"><i class="material-icons icon-size">star</i></span>
+                              <i class="material-icons cart-to" (click)='addToCart(item)'>add_shopping_cart</i>
+                          </div>
+                    </table>
+                     
+                  </div>
+                </div>
+          </div>
+          <div class="notFound" *ngIf='noData'>
+            <h6 class="alert-text">No Data Found</h6>
+          </div>
+          <div class="notFound" *ngIf='httpError'>
+            <h6 class="alert-text">Server Error: Failed to Load Items. Please Try again Later!!!!</h6>
+          </div>
+      </div>
   </div>
-  <div class="col s9 col m9 nopadding">
-    <app-navbar></app-navbar>
-<div class="body"> 
-        <div class="col s6 col m4 col l4 border" *ngFor='let item of filterData'>
-            <div class="card">
-                <div class="card-image waves-block">
-                  <img class="activator" src='{{item.img_url}}'>
-                </div>
-                <div class="card-content">
-                  <span class="card-title">{{item.name}}</span>
-                  <table>
-                    <thead>
-                      <tr class="padding">
-                          <th class="">{{item.name}}</th>
-                        
-                          <th class="discount">&#8377;{{item.price}}</th>
-                      </tr>
-                    </thead>
-                   
-                        <div class="icon-container">
-                            <span id="p1"  class="ratingmode"><i class="material-icons icon-size">star</i></span>
-                            <span id="p2"  class="ratingmode"><i class="material-icons icon-size">star</i></span>
-                            <span id="p3"  class="ratingmode"><i class="material-icons icon-size">star</i></span>
-                            <span id="p4"  class="ratingmode"><i class="material-icons icon-size">star</i></span>
-                            <span id="p5"  class="ratingmode"><i class="material-icons icon-size">star</i></span>
-                            <i class="material-icons cart-to" (click)='addToCart(item)'>add_shopping_cart</i>
-                        </div>
-                  </table>
-                   
-                </div>
-              </div>
-        </div>
-        <div class="notFound" *ngIf='noData'>
-          <h6 class="alert-text">No Data Found</h6>
-        </div>
-        <div class="notFound" *ngIf='httpError'>
-          <h6 class="alert-text">Server Error: Failed to Load Items. Please Try again Later!!!!</h6>
-        </div>
-</div>
-</div>
-</div>
+
 
 
